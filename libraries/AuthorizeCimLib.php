@@ -47,8 +47,7 @@ class AuthorizeCimLib
 		$this->_CI->config->load('authorizenet');
 		
 		if($this->_CI->config->item('authorizenetname') && 
-				$this->_CI->config->item('authorizenetkey') &&
-				$this->_CI->config->item('authorizenettestmode'))
+				$this->_CI->config->item('authorizenetkey'))
 		{
 			$this->initialize($this->_CI->config->item('authorizenetname'), 
 												$this->_CI->config->item('authorizenetkey'), 
